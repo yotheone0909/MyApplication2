@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
     tools:context="com.example.yothin_indy.myapplication.MainActivity">
 
@@ -127,11 +128,36 @@
         android:indeterminate="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_spotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#7ab800"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_fontIconResource="&#xf04b;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="SHUFFLE PLAY"
+            fancy:fb_textColor="#FFFFFF" />
+        <com.example.yothin_indy.myapplication.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+
+        <com.example.yothin_indy.myapplication.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:isBlue = "true"/>
         <View
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="#000000"/>
+            android:background="#00000000"/>
 <LinearLayout
     android:layout_width="match_parent"
     android:orientation="horizontal"
