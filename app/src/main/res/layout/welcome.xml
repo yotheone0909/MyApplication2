@@ -6,17 +6,16 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:scaleType="centerCrop"
         android:layout_height="match_parent"
+        android:scaleType="centerCrop"
         android:src="@drawable/bg" />
-
 
 
     <LinearLayout
 
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/ivLogo"
@@ -26,84 +25,85 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/tvWelcome"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="Welcome to Clipzy"
-                android:textColor="@android:color/white"
-                android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/tvWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:text="Welcome to Clipzy"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
 
-            <TextView
-                android:id="@+id/tvClip"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="Clip anything from over"
-                android:textColor="@android:color/white"
-                android:textSize="11sp" />
+                <TextView
+                    android:id="@+id/tvClip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Clip anything from over"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp" />
 
-            <TextView
-                android:layout_below="@id/tvClip"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="100,000 hot topics"
-                android:textColor="@android:color/white"
-                android:textSize="11sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvClip"
+                    android:layout_gravity="center_horizontal"
+                    android:text="100,000 hot topics"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp" />
             </LinearLayout>
         </FrameLayout>
 
 
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
 
 
+            <Button
+                android:id="@+id/btnGet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvClip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_btn_getstarted"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="Get Started"
+                android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btnGet"
-        android:layout_gravity="center_horizontal"
-        android:padding="16dp"
-        android:background="@drawable/selector_btn_getstarted"
-        android:text="Get Started"
-        android:layout_below="@id/tvClip"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnGet"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Skip"
+                style="@style/TextViewStyle.Green" />
 
-    <TextView
-        android:id="@+id/tvSize"
-        android:layout_below="@id/btnGet"
-        android:layout_marginTop="20dp"
-        android:textColor="@android:color/white"
-        android:layout_marginBottom="16dp"
-        android:text="Skip"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_below="@id/tvSize"
-        android:textColor="@android:color/white"
-        android:text="By continuing you accept the Term of Use and Privacy Palicy"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSize"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:text="By continuing you accept the Term of Use and Privacy Palicy"
+                style="@style/TextViewStyle" />
         </LinearLayout>
     </LinearLayout>
 

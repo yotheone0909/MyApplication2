@@ -128,6 +128,17 @@
         android:indeterminate="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+        <include layout="@layout/sample_bar" />
+
+        <com.example.yothin_indy.myapplication.CustomViewGroup
+            android:id="@+id/viewGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.example.yothin_indy.myapplication.CustomViewGroup
+            android:id="@+id/viewGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
         <mehdi.sakout.fancybuttons.FancyButton
             android:id="@+id/btn_spotify"
             android:layout_width="wrap_content"

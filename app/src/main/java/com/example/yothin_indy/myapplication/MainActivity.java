@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     RadioButton rbMinus;
     RadioButton rbMultiply;
     RadioButton rbDivide;
+    CustomViewGroup viewGroup1;
+    CustomViewGroup viewGroup2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +83,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Toast.makeText(this, "Width = "+widht+",Height = "+height, Toast.LENGTH_SHORT).show();
 
+        viewGroup1 = (CustomViewGroup)findViewById(R.id.viewGroup1);
+        viewGroup2 = (CustomViewGroup)findViewById(R.id.viewGroup2);
+        viewGroup1.setButtonText("Hello");
+        viewGroup2.setButtonText("World");
 
     }
 
